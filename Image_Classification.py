@@ -20,11 +20,10 @@ def machine_classification(img, weights_file):
     #print(train_generator.class_indices) #to check the value of outplut class assigned
 
     if result[0] == 1:
-        #prediction = "Benign"
-        #print("Looks like Dog !")
+        #prediction = "Non Degradable Object"
         return 1
     else:
-      #print("Looks like Cat ")
+      #print("Degradable Object ")
       return 0
     
   
