@@ -16,16 +16,16 @@ def local_css(file_name):
 
 
 local_css("style.css")
-st.title("Image Classification of Benign and Malignant skin cancer ")
-st.header("We are going to predict whether uploaded image of Melanoma is benign or Malignant")
-st.write("Created on July'14 2020")
+st.title("Image Classification of Degradable and Non Degradable oject for better waste management ")
+st.header("We are going to predict whether uploaded image of Object is Degradable or Non Degradable object")
+st.write("Created on Oct'1 2020")
 st.write("@Author: Arun Ramji Shanmugam")
 st.write("________________________")
 st.write(" ")
 st.write(" ")
 st.write(" ")
 st.write(" ")
-st.write("Upload an image to see if it is Benign or Malignant type of Melanoma")
+st.write("Please upload an image")
 
 
 uploaded_file = st.file_uploader("Choose an Image ...", type=("jpg","png","jpeg"))
@@ -38,7 +38,7 @@ if uploaded_file is not None:
     #st.write("Classifying...")
     uploaded_file = uploaded_file.read()
     st.write("")
-    st.write("Hi Doctor , Below are the sample images of how it looked like in some of my neural network layer...")
+    st.write("Hi User , Below are the sample images of how it looked like in some of my neural network layer...")
     
 #     #Let's visualise all activation in the network
 #     from keras.models import load_model
@@ -100,7 +100,7 @@ if uploaded_file is not None:
     for percent_complete in range(100):
         time.sleep(0.1)
         my_bar.progress(percent_complete + 1)
-    if label[0] == 1:
+    if label == 1:
         st.subheader('RESULT :')
         t = "<div>As per our AI Engine - There is a chance that it is a<span class='highlight'> <span class='bold'></span> </span> Non Degradable Object!</div>"
         st.markdown(t, unsafe_allow_html=True)
