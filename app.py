@@ -16,7 +16,7 @@ def local_css(file_name):
 
 
 local_css("style.css")
-st.title("Image Classification of Degradable and Non Degradable oject for better waste management ")
+st.title("Image Classification of Degradable and Non Degradable object for better waste management ")
 st.header("We are going to predict whether uploaded image of Object is Degradable or Non Degradable object")
 st.write("Created on Oct'1 2020")
 st.write("@Author: Arun Ramji Shanmugam")
