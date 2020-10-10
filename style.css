@@ -1,0 +1,21 @@
+
+body{
+background-color: #FDFEFE;
+background-image: url("https://robophilosophy.swissbooks.net/wp-content/uploads/2019/12/Wall_E.jpg");
+    color : white
+     
+}
+
+.bold {
+font-weight: 1000;
+}
+
+
+.highlight {
+  border-radius: 0.4rem;
+  font-size : 200% ;
+  color:red;
+  text-decoration: underline overline dotted red ;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
