@@ -93,7 +93,7 @@ if uploaded_file is not None:
             
     #st.write(type(uploaded_file))
     #st.write(uploaded_file)
-    st.write("Based on my analysis , Below is the result. keep in mind I am just 70% expert(accurate) now !!")
+    st.write("Based on my analysis , Below is the result. keep in mind I am just 80% expert(accurate) now !!")
     st.write("Classifying...")
     label = machine_classification(uploaded_file,'model1.h5')
     my_bar = st.progress(0)
@@ -102,12 +102,12 @@ if uploaded_file is not None:
         my_bar.progress(percent_complete + 1)
     if label == 1:
         st.subheader('RESULT :')
-        t = "<div>As per our AI Engine - There is a chance that it is a<span class='highlight'> <span class='bold'></span> </span> Non Degradable Object!</div>"
+        t = "<div>As per our AI Engine - There is a chance that it is a<span class='highlight'> <span class='bold'></span> Non Degradable</span> Object!</div>"
         st.markdown(t, unsafe_allow_html=True)
         #st.write("With the probability of",label[1])
     else:
         st.subheader('RESULT :')
-        t = "<div>As per our AI Engine - There is a chance that it is a<span class='highlight'> <span class='bold'> Malignant</span> </span> Degradable Object!</div>"
+        t = "<div>As per our AI Engine - There is a chance that it is a<span class='highlight'> <span class='bold'> Malignant</span>Degradable </span> Object!</div>"
         st.markdown(t, unsafe_allow_html=True)
         #st.write("With the probability of",label[1])
         
