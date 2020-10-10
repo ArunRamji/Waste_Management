@@ -31,13 +31,13 @@ if uploaded_file is not None:
     for percent_complete in range(100):
         time.sleep(0.1)
         my_bar.progress(percent_complete + 1)
-    if label == 0:
+    if label == 1:
         st.subheader('RESULT :')
-        t = "<div>As per our AI Engine - There is a chance that it is a<span class='highlight'> <span class='bold'> benign</span> </span> melanoma!</div>"
+        t = "<div>As per our AI Engine - There is a higher chance that it is a<span class='highlight'> <span class='bold'> benign</span> </span> Non Degradable Object!</div>"
         st.markdown(t, unsafe_allow_html=True)
     else:
         st.subheader('RESULT :')
-        t = "<div>As per our AI Engine - There is a chance that it is a<span class='highlight'> <span class='bold'> Malignant</span> </span> melanoma!</div>"
+        t = "<div>As per our AI Engine - There is a chance that it is a<span class='highlight'> <span class='bold'> Degradable Object</span> </span> melanoma!</div>"
         st.markdown(t, unsafe_allow_html=True)
         
      
